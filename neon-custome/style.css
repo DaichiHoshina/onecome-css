@@ -44,8 +44,8 @@
     min-width: 200px;
     max-width: 400px;
 
-    /* ガラスUI - 暗めの半透明背景（コントラスト改善） */
-    background-color: rgba(40, 40, 45, 0.85) !important; /* 元テンプレート上書きのため必須 */
+    /* ガラスUI - 暗めの半透明背景（透明度調整） */
+    background-color: rgba(40, 40, 45, 0.75) !important; /* 元テンプレート上書きのため必須 */
     backdrop-filter: blur(12px) saturate(180%) !important;
     -webkit-backdrop-filter: blur(12px) saturate(180%) !important;
 

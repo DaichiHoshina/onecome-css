@@ -22,7 +22,15 @@
     overflow-y: visible !important;  /* 縦方向は切らない */
     gap: 16px !important;
     padding: 20px 12px !important;  /* 上下に余裕を持たせる */
-    align-items: flex-start !important;  /* 上揃えに変更 */
+    align-items: flex-end !important;  /* 下揃え */
+}
+
+/* コメントコンテナを画面下部に配置 */
+.container {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-end !important;  /* 下寄せ */
+    height: 100vh !important;  /* 画面全体の高さ */
 }
 
 /* スクロールバーを隠す */
@@ -55,10 +63,7 @@
     overflow: visible !important;  /* 内容が切れないように */
 }
 
-/* コンテナの背景は透明に */
-.container {
-    background-color: transparent !important;
-}
+/* コンテナの背景は透明に（上記で設定済み） */
 
 /* スパチャの金額・メッセージ部分も色を統一 */
 .comment[data-paid="true"] .paid-text,

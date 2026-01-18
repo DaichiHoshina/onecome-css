@@ -24,7 +24,7 @@ const app = Vue.createApp({
   },
   mounted() {
     let cache = new Map();
-    commentIndex = 0;
+    let commentIndex = 0;
     OneSDK.setup({
       permissions: OneSDK.usePermission([OneSDK.PERM.COMMENT]),
     });

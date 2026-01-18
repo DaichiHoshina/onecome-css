@@ -59,4 +59,17 @@
 .container {
     background-color: transparent !important;
 }
+
+/* スパチャの金額・メッセージ部分も色を統一 */
+.comment[data-paid="true"] .paid-text,
+.comment[data-paid="true"] .paid-text strong,
+.comment[data-paid="true"] .comment-text {
+    color: rgba(255, 255, 255, 0.95) !important;
+    text-shadow: 0 0 3px #fff, 0 0 6px var(--neon-color), 0 0 9px var(--neon-color) !important;
+}
+
+/* スパチャだけ上部の余白を広げる */
+.comment[data-paid="true"] {
+    padding-top: 24px !important;  /* 通常12px → 24pxに */
+}
 /* テンプレカスタム ここまで */

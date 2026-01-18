@@ -65,6 +65,15 @@
 
 /* コンテナの背景は透明に（上記で設定済み） */
 
+/* コメント本文が枠からはみ出ないように */
+.comment .comment-body,
+.comment .comment-text {
+    max-width: 100% !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    box-sizing: border-box !important;
+}
+
 /* スパチャ・メンシプの金額・メッセージ部分も色を統一 */
 .comment[data-paid="true"] .paid-text,
 .comment[data-paid="true"] .paid-text strong,
@@ -81,6 +90,9 @@
 .comment[data-membership="true"] .comment-body .paid-text {
     display: block !important;
     margin: 0 0 0 0 !important;  /* marginをリセット */
+    max-width: 100% !important;  /* 親要素の幅を超えないように */
+    word-wrap: break-word !important;  /* 長い単語を折り返す */
+    overflow-wrap: break-word !important;  /* 最新の折り返しプロパティ */
 }
 
 /* 金額の直後のone-marquee要素に上部スペースを確保（詳細度最大化） */

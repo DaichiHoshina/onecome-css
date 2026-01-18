@@ -65,29 +65,35 @@
 
 /* コンテナの背景は透明に（上記で設定済み） */
 
-/* スパチャの金額・メッセージ部分も色を統一 */
+/* スパチャ・メンシプの金額・メッセージ部分も色を統一 */
 .comment[data-paid="true"] .paid-text,
 .comment[data-paid="true"] .paid-text strong,
-.comment[data-paid="true"] .comment-text {
+.comment[data-paid="true"] .comment-text,
+.comment[data-membership="true"] .paid-text,
+.comment[data-membership="true"] .paid-text strong,
+.comment[data-membership="true"] .comment-text {
     color: rgba(255, 255, 255, 0.95) !important;
     text-shadow: 0 0 3px #fff, 0 0 6px var(--neon-color), 0 0 9px var(--neon-color) !important;
 }
 
-/* スパチャの金額とメッセージの間隔調整（隣接兄弟セレクタで確実に） */
-.comment[data-paid="true"] .comment-body .paid-text {
+/* スパチャ・メンシプの金額とメッセージの間隔調整（隣接兄弟セレクタで確実に） */
+.comment[data-paid="true"] .comment-body .paid-text,
+.comment[data-membership="true"] .comment-body .paid-text {
     display: block !important;
     margin: 0 0 0 0 !important;  /* marginをリセット */
 }
 
 /* 金額の直後のone-marquee要素に上部スペースを確保（詳細度最大化） */
-.comment[data-paid="true"] .comment-body .paid-text + one-marquee {
+.comment[data-paid="true"] .comment-body .paid-text + one-marquee,
+.comment[data-membership="true"] .comment-body .paid-text + one-marquee {
     display: block !important;
     margin-top: 16px !important;  /* 明確に視認できる間隔 */
     padding-top: 0 !important;     /* padding干渉を防止 */
 }
 
-/* スパチャだけ上下の余白を広げる（均等に） */
-.comment[data-paid="true"] {
+/* スパチャ・メンシプは上下の余白を広げる（均等に） */
+.comment[data-paid="true"],
+.comment[data-membership="true"] {
     padding: 24px 16px !important;  /* 上下24px、左右16pxで均等に */
 }
 

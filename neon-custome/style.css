@@ -73,6 +73,11 @@
     text-shadow: 0 0 3px #fff, 0 0 6px var(--neon-color), 0 0 9px var(--neon-color) !important;
 }
 
+/* 金額とメッセージの間隔を調整 */
+.comment[data-paid="true"] .paid-text {
+    margin-bottom: 8px;
+}
+
 /* スパチャだけ上下の余白を広げる（均等に） */
 .comment[data-paid="true"] {
     padding: 24px 16px !important;  /* 上下24px、左右16pxで均等に */

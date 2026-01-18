@@ -73,11 +73,16 @@
     text-shadow: 0 0 3px #fff, 0 0 6px var(--neon-color), 0 0 9px var(--neon-color) !important;
 }
 
-/* スパチャの金額とメッセージの間隔を調整 */
-.comment[data-paid="true"] .comment-body {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 12px !important;  /* 金額とメッセージの間隔 */
+/* スパチャの金額部分を確実にブロック要素化 */
+.comment[data-paid="true"] .paid-text {
+    display: block !important;
+    margin-bottom: 12px !important;
+}
+
+/* one-marquee要素の上部にも間隔を追加（二重保険） */
+.comment[data-paid="true"] one-marquee {
+    display: block !important;
+    margin-top: 12px !important;
 }
 
 /* スパチャだけ上下の余白を広げる（均等に） */

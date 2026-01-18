@@ -75,7 +75,7 @@
 
 /* 金額とメッセージの間隔を調整 */
 .comment[data-paid="true"] .paid-text {
-    margin-bottom: 8px;
+    margin-bottom: 12px !important;
 }
 
 /* スパチャだけ上下の余白を広げる（均等に） */

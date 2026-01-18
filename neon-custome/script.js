@@ -16,20 +16,9 @@ const app = Vue.createApp({
     },
     getStyle(comment) {
       if (comment.data.colors) {
-        const bgColor = comment.data.colors.bodyBackgroundColor;
-        const style = {
-          // スパチャでもガラスUI風に統一
-          "--lcv-background-color": "rgba(40, 40, 45, 0.7)", // 通常より少し濃く
-          "--lcv-text-color": "rgba(255, 255, 255, 0.95)", // 白文字で統一
-          "--lcv-name-color": "rgba(255, 255, 255, 0.85)", // ユーザー名も白
-          // スパチャ用のネオン効果（スパチャカラーを使う）
-          "--lcv-neon-shadow": `0 0 3px #fff, 0 0 6px ${bgColor}, 0 0 9px ${bgColor}`,
-          "--lcv-box-shadow": `0 8px 32px 0 rgba(0, 0, 0, 0.37),
-          0 0 6px ${bgColor},
-          inset 0 1px 0 0 rgba(255, 255, 255, 0.1)`,
-          // ガラスUI効果は維持（CSSで定義済み）
-        };
-        return style;
+        // スパチャも通常コメントと完全に同じ見た目にする
+        // カスタムスタイルを返さないことで、CSSのデフォルト設定を使用
+        return {};
       }
     },
   },

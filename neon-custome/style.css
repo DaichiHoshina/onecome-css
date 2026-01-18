@@ -65,13 +65,30 @@
 
 /* コンテナの背景は透明に（上記で設定済み） */
 
-/* コメント本文が枠からはみ出ないように */
+/* 全ての子要素が枠からはみ出ないように */
+.comment .comment-block,
 .comment .comment-body,
-.comment .comment-text {
+.comment .comment-text,
+.comment .name,
+.comment one-marquee {
     max-width: 100% !important;
     word-wrap: break-word !important;
     overflow-wrap: break-word !important;
     box-sizing: border-box !important;
+}
+
+/* バッジコンテナも幅制限 */
+.comment .badge {
+    max-width: 100% !important;
+    display: inline-block !important;
+    box-sizing: border-box !important;
+}
+
+/* バッジ画像のサイズ制限 */
+.comment .badge img {
+    max-width: 24px !important;
+    max-height: 24px !important;
+    object-fit: contain !important;
 }
 
 /* スパチャ・メンシプの金額・メッセージ部分も色を統一 */

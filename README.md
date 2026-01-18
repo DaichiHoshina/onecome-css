@@ -128,8 +128,24 @@
 
 ## 📄 ライセンス
 
-- わんこめ（OneComme）の公式テンプレートをベースに調整
-- 個人利用目的での使用を想定
+MIT License - 詳細は [LICENSE](./LICENSE) を参照
+
+### Credits / クレジット
+
+このプロジェクトは [OneComme](https://onecomme.com) のネオンテンプレートをカスタマイズしたものです。
+
+- **Original Template**: OneComme Neon Template
+- **Original Author**: OneComme (https://onecomme.com)
+- **Custom Modifications**: Daichi Hoshina
+- **Repository**: https://github.com/DaichiHoshina/onecome-css
+
+### Disclaimer / 免責事項
+
+⚠️ **重要**: 本プロジェクトは非公式のカスタム版であり、OneComme とは無関係です。
+
+公式の OneComme テンプレートについては、以下をご覧ください:
+- 公式サイト: https://onecomme.com
+- テンプレート: https://onecomme.com/generator/templates
 
 ---
 
@@ -139,8 +155,11 @@
 1. `PRD_neon_css_adjustment.md`: 詳細仕様
 2. `REVIEW_RESULT.md`: レビュー結果と既知の問題
 3. `preview.html`: 視覚的なプレビュー
+4. [Issues](https://github.com/DaichiHoshina/onecome-css/issues): バグ報告・要望
 
 ---
 
 **作成日**: 2026-01-18
 **プロジェクト**: わんこめネオンCSS調整
+**ライセンス**: MIT License
+**作者**: Daichi Hoshina (Custom modifications based on OneComme)

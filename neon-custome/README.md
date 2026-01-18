@@ -86,8 +86,24 @@ cp style.css.backup style.css
 
 ---
 
-## 📌 ベース
+## 📌 ベース・ライセンス
+
+### Credits / クレジット
+
+このテンプレートは [OneComme](https://onecomme.com) の公式ネオンテンプレートをカスタマイズしたものです。
 
 - **元テンプレート**: OneComme公式ネオンテンプレート
+- **オリジナル作者**: OneComme (https://onecomme.com)
 - **カスタマイズ日**: 2026-01-18
-- **作者**: Custom (based on OneComme)
+- **カスタマイズ作者**: Daichi Hoshina
+
+### ライセンス
+
+MIT License - 詳細はルートディレクトリの [LICENSE](../LICENSE) を参照
+
+### 免責事項
+
+⚠️ 本テンプレートは非公式のカスタム版であり、OneComme とは無関係です。
+
+公式テンプレートは以下からダウンロードできます:
+- https://onecomme.com/generator/templates

@@ -73,9 +73,9 @@
     text-shadow: 0 0 3px #fff, 0 0 6px var(--neon-color), 0 0 9px var(--neon-color) !important;
 }
 
-/* スパチャだけ上部の余白を広げる */
+/* スパチャだけ上下の余白を広げる（均等に） */
 .comment[data-paid="true"] {
-    padding-top: 24px !important;  /* 通常12px → 24pxに */
+    padding: 24px 16px !important;  /* 上下24px、左右16pxで均等に */
 }
 
 /* キーボードフォーカス対応（アクセシビリティ） */
